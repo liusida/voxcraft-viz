@@ -18,6 +18,6 @@ sudo snap install voxcraft-viz
 
 More detail about installation, please refer to: http://snapcraft.io/voxcraft-viz
 
-# Gallary
+# Screenshot
 
-Show some pictures or videos here.
+![screenshot](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_819,h_443/https://dashboard.snapcraft.io/site_media/appmedia/2020/05/2_lgb5miW.png)

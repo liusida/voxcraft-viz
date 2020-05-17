@@ -1,6 +1,6 @@
 name: voxcraft-viz
 base: core18 # the base snap is the execution environment for this snap
-version: '3.0'
+version: '3.01'
 summary: Design your voxel-based soft robot
 description: |
   This is one of the three parts of voxcraft software.
@@ -9,8 +9,8 @@ description: |
   3. voxcraft-viz: The visualization tool that can playback the history file produced by voxcraft-sim, and it can used for manually design bots and run it in a CPU-based physics engine.
   Learn more about the whole voxcraft project (not just software) to get a bigger picture, please refer to: https://voxcraft.github.io/
 
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs and slots
+grade: stable
+confinement: strict
 
 parts:
   cmake:
