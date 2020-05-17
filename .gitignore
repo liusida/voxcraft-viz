@@ -1,6 +1,7 @@
 # Customized files
 *.snap
 build
+.vscode
 
 # Prerequisites
 *.d
