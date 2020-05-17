@@ -1,0 +1,17 @@
+name: voxcraft-viz
+base: core18 # the base snap is the execution environment for this snap
+version: '3.0'
+summary: The tool that can playback the history file produced by voxcraft-sim, or manually design bots and run it locally.
+description: |
+  This is one of the three parts of voxcraft software.
+  1. voxcraft-sim: A highly parallelized physics engine that can simulate the voxel-based soft robots. This part utilizes CUDA and GPU.
+  2. voxcraft-evo: The evolutionary algorithms that can automatically design voxel-based soft robots.
+  3. voxcraft-vis: The visualization tool that can playback the history file produced by voxcraft-sim, and it can used for manually design bots and run it in a CPU-based physics engine.
+  Learn more about the whole voxcraft project (not just software) to get a bigger picture, please refer to: https://voxcraft.github.io/
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  voxcraft-viz:
+    plugin: nil
