@@ -22,6 +22,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "VoxCad.h"
 
 int main(int argc, char *argv[]) {
+    printf("Loading...");
     QApplication a(argc, argv);
     VoxCad w;
     bool openHistory = false;

@@ -51,9 +51,6 @@ parts:
       - libboost-all-dev
     stage-packages:
       - libglu1-mesa
-    filesets:
-      exclusion:
-        - -etc # All in core
 
 apps:
   voxcraft-viz:
@@ -62,3 +59,5 @@ apps:
       - kde-neon
     plugs:
       - opengl
+      - home
+      - mount-observe
