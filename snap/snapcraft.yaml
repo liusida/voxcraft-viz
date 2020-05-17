@@ -9,8 +9,8 @@ description: |
   3. voxcraft-viz: The visualization tool that can playback the history file produced by voxcraft-sim, and it can used for manually design bots and run it in a CPU-based physics engine.
   Learn more about the whole voxcraft project (not just software) to get a bigger picture, please refer to: https://voxcraft.github.io/
 
-grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: devmode # use 'strict' once you have the right plugs and slots
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs and slots
 
 
 parts:
