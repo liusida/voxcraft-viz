@@ -53,9 +53,7 @@ parts:
       - libglu1-mesa
     filesets:
       exclusion:
-        - "-usr"
-      prime:
-        - "$exclusion"
+        - -etc # All in core
 
 apps:
   voxcraft-viz:
