@@ -12,6 +12,7 @@ Learn more about the whole voxcraft project (not just software) to get a bigger 
 
 # Installation
 
+## On Linux
 ```
 sudo snap install voxcraft-viz
 ```
@@ -21,6 +22,10 @@ The first time executing `voxcraft-viz` will take 2 minutes, due to that snap ne
 More detail about installation: 
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-white.svg)](https://snapcraft.io/voxcraft-viz)
+
+## On Mac
+
+We don't provide binary version for Mac (because the developers cannot afford Mac's). However, you can build the project from source code. [Here is a simple tutorial for that](InstallOnMac.md).
 
 # Demos
 
