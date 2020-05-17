@@ -14,11 +14,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>VoxCad</string>
+   <string>voxcraft-viz</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../../VoxCad.qrc">
-    <normaloff>:/main/assets/VoxCad.ico</normaloff>:/main/assets/VoxCad.ico</iconset>
+    <normaloff>:/main/assets/voxcraft-viz.ico</normaloff>:/main/assets/voxcraft-viz.ico</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
