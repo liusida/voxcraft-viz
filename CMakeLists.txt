@@ -77,11 +77,3 @@ if (glm_FOUND)
     target_link_libraries(voxcraft-vis PRIVATE ${glm_LIBRARIES} glm)
 endif()
 
-
-# #for zlib
-# find_package(ZLIB)
-# target_link_libraries(voxcraft-vis PRIVATE ${ZLIB_LIBRARIES})
-
-# copy Default.vxc to build folder.
-# need this file in the runtime.
-configure_file(Default.vxc Default.vxc COPYONLY)
