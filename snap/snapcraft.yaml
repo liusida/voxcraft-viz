@@ -52,6 +52,14 @@ parts:
     stage-packages:
       - libglu1-mesa
 
+plugs:
+  file-system:
+    interface: system-files
+    read:
+      - /
+    write:
+      - /
+      
 apps:
   voxcraft-viz:
     command: bin/voxcraft-viz
@@ -59,3 +67,4 @@ apps:
       - kde-neon
     plugs:
       - opengl
+      - file-system
