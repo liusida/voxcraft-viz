@@ -61,3 +61,7 @@ apps:
       - opengl
       - home
       - mount-observe
+      - optical-drive
+      - network-bind
+      - network
+      - removable-media
