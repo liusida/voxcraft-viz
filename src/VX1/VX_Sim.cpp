@@ -93,7 +93,7 @@ bool CVX_Sim::ReadVXA(CXML_Rip* pXML, std::string* RetMessage) //pointer to VXA 
 	std::string ThisVersion = "1.1";
 	std::string Version;
 	pXML->GetElAttribute("Version", &Version);
-	if (atof(Version.c_str()) > atof(ThisVersion.c_str())) if (RetMessage) *RetMessage += "Attempting to open newer version of VXA file. Results may be unpredictable.\nUpgrade to newest version of VoxCAD.\n";
+	if (atof(Version.c_str()) > atof(ThisVersion.c_str())) if (RetMessage) *RetMessage += "Attempting to open newer version of VXA file. Results may be unpredictable.\nUpgrade to newest version of voxcraft-viz.\n";
 
 	if (pXML->FindElement("Simulator")){
 		ReadXML(pXML);

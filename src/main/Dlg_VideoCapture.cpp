@@ -17,7 +17,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 
 Dlg_VideoCapture::Dlg_VideoCapture(QWidget *parent)
-	: QDialog(parent) //, Settings("HillerLabs", "VoxCAD")
+	: QDialog(parent)
 {
 	ui.setupUi(this);
 	AcceptedDialog = false;

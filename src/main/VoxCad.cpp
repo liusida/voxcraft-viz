@@ -35,9 +35,6 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 VoxCad::VoxCad(QWidget *parent, Qt::WindowFlags flags)
     : QMainWindow(parent, flags) //, MainSim(&MainEnv, &MainMesh)
 {
-    // QCoreApplication::setOrganizationName("HillerLabs");
-    // QCoreApplication::setOrganizationDomain("www.VoxCAD.com");
-    // QCoreApplication::setApplicationName("VoxCAD");
 
     // setup main object and FEA
     MainEnv.pObj = &MainObj; // connect environment to object
@@ -171,7 +168,7 @@ VoxCad::VoxCad(QWidget *parent, Qt::WindowFlags flags)
     FullScreen_dlg = new QDialog(this);
     FullScreen_dlg_layout = new QHBoxLayout(FullScreen_dlg);
 
-    QString msg = "Current VoxCAD was built on: ";
+    QString msg = "Current voxcraft-viz was built on: ";
     msg += __DATE__;
     ui.statusBar->showMessage(msg);
 }

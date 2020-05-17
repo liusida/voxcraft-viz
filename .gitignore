@@ -1,5 +1,6 @@
 # Customized files
 *.snap
+build
 
 # Prerequisites
 *.d

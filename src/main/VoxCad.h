@@ -506,7 +506,7 @@ class VoxCad : public QMainWindow {
     void ExportDMU(void) { SaveDMU(&MainObj); };
 #endif
 
-    void SetWindowName(QString Filename) { setWindowTitle(Filename + " - VoxCAD"); }
+    void SetWindowName(QString Filename) { setWindowTitle(Filename + " - voxcraft-viz"); }
 
   private:
     Ui::VoxCadClass ui;

@@ -440,7 +440,7 @@ void CVX_Object::ReadXML(CXML_Rip* pXML, bool OnlyPal, std::string* RetMessage)
 	std::string ThisVersion = "0.94"; //version of the reading code...
 	std::string Version;
 	pXML->GetElAttribute("Version", &Version);
-	if (atof(Version.c_str()) > atof(ThisVersion.c_str())) if (RetMessage) *RetMessage += "Attempting to open newer version of VXC file. Results may be unpredictable.\nUpgrade to newest version of VoxCAD.";
+	if (atof(Version.c_str()) > atof(ThisVersion.c_str())) if (RetMessage) *RetMessage += "Attempting to open newer version of VXC file. Results may be unpredictable.\nUpgrade to newest version of voxcraft-viz.";
 
 	if (!OnlyPal && pXML->FindElement("Lattice")){
 		Lattice.ReadXML(pXML);
