@@ -36,6 +36,12 @@ target_include_directories(voxcraft-viz PUBLIC ${VOXCAD_MAIN} ${VX2}/include ${V
 find_package(Qt5 COMPONENTS Core Gui Xml OpenGL Concurrent Widgets PrintSupport REQUIRED)
 target_link_libraries(voxcraft-viz PRIVATE Qt5::Core Qt5::Gui Qt5::Xml Qt5::OpenGL Qt5::Concurrent Qt5::Widgets Qt5::PrintSupport)
 
+#for Boost
+find_package(Boost REQUIRED)
+if (Boost_FOUND)
+    message(STATUS "Boost FOUND")
+    target_include_directories(voxcraft-vis PRIVATE ${Boost_INCLUDE_DIRS})
+endif()
 
 #for visualization
 set(OpenGL_GL_PREFERENCE GLVND)
