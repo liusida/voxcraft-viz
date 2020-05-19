@@ -8,7 +8,12 @@
 #include <math.h>
 #include <vector>
 
-#include "GL/glu.h"
+#if __APPLE__
+    #include "OpenGL/glu.h"
+#else
+    #include "GL/glu.h"
+#endif
+
 // VX1
 #include "GL_Utils.h"
 
