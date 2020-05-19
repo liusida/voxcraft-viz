@@ -40,7 +40,7 @@ target_link_libraries(voxcraft-viz PRIVATE Qt5::Core Qt5::Gui Qt5::Xml Qt5::Open
 find_package(Boost REQUIRED)
 if (Boost_FOUND)
     message(STATUS "Boost FOUND")
-    target_include_directories(voxcraft-vis PRIVATE ${Boost_INCLUDE_DIRS})
+    target_include_directories(voxcraft-viz PRIVATE ${Boost_INCLUDE_DIRS})
 endif()
 
 #for visualization
