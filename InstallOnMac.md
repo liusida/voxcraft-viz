@@ -18,8 +18,9 @@ git clone https://github.com/liusida/voxcraft-viz.git
 cd voxcraft-viz/
 mkdir build
 cd build/
-cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake -DQt5_DIR=$(brew --prefix qt5)/lib/cmake/Qt5 -DCMAKE_BUILD_TYPE=Release ..
 ```
+
 Wait a minute, you need to make a little bit of hacking in the source files:
 
 The first one is `src/QTUtils/QOpenGL.cpp`
@@ -31,7 +32,7 @@ To
     #include "OpenGL/glu.h"
 ```
 
-The second one is `CMakeFiles.txt`
+The second one is `CMakeLists.txt`
 
 ```bash
 Change line 70 from
@@ -40,9 +41,9 @@ to
     # find_package(glm CONFIG REQUIRED) # glm
 
 Change line 44 from
-    target_link_libraries(VoxCAD PRIVATE ${OpenGL_LIBRARIES} GL)
+    target_link_libraries(voxcraft-viz PRIVATE ${OpenGL_LIBRARIES} GL)
 to
-    target_link_libraries(VoxCAD PRIVATE ${OpenGL_LIBRARIES})
+    target_link_libraries(voxcraft-viz PRIVATE ${OpenGL_LIBRARIES})
 ```
 
 OK, let’s continue.
