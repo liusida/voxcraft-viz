@@ -1,5 +1,7 @@
 # Voxcraft
 
+[![voxcraft-viz](https://snapcraft.io//voxcraft-viz/badge.svg)](https://snapcraft.io/voxcraft-viz)
+
 This repo is one of the three parts of voxcraft software.
 
 1. [voxcraft-sim](https://github.com/liusida/voxcraft-sim): A highly parallelized physics engine that can simulate the voxel-based soft robots. This part utilizes CUDA and GPU.
