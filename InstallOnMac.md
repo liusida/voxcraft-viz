@@ -29,4 +29,4 @@ Done!
 
 Thank Arlo Cohen at University of Vermont for providing the instruction on Mac.
 
-
+Thank Caitlin Grasso for helping us simplify this instruction during installation. 
